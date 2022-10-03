@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Array</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="pcArea">
+
+        </div>
+    </div>
+
+    <script>
+
+        function LA() {
+            let alfabeto = "abcdefghijklmnopqrstuvwxyz"
+            return `<div class="pcAreaLetra"> ${alfabeto[Math.floor(Math.random() * alfabeto.length)]} </div>`
+        }
+
+
+        matriz = new Array();
+
+        matriz = [
+            [`<div class="pcAreaLetraCor">C</div>`, `<div class="pcAreaLetraCor">A</div>`, `<div class="pcAreaLetraCor">P</div>`, `<div class="pcAreaLetraCor">R</div>`, `<div class="pcAreaLetraCor">I</div>`, `<div class="pcAreaLetraCor">C</div>`, `<div class="pcAreaLetraCor">Ó</div>`, `<div class="pcAreaLetraCor">R</div>`, `<div class="pcAreaLetraCor">N</div>`, `<div class="pcAreaLetraCor">I</div>`, `<div class="pcAreaLetraCor">O</div>`, LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), `<div class="pcAreaLetraCor">L</div>`],
+            [LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), `<div class="pcAreaLetraCor">E</div>`],
+            [LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), `<div class="pcAreaLetraCor">Ã</div>`],
+            [LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), `<div class="pcAreaLetraCor">O</div>`],
+            [`<div class="pcAreaLetraCor">G</div>`, `<div class="pcAreaLetraCor">Ê</div>`, `<div class="pcAreaLetraCor">M</div>`, `<div class="pcAreaLetraCor">E</div>`, `<div class="pcAreaLetraCor">O</div>`, `<div class="pcAreaLetraCor">S</div>`, LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA()],
+            [LA(), `<div class="pcAreaLetraCor">E</div>`, LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), `<div class="pcAreaLetraCor">S</div>`, LA(), LA()],
+            [LA(), `<div class="pcAreaLetraCor">S</div>`, LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), `<div class="pcAreaLetraCor">A</div>`, LA(), LA()],
+            [LA(), `<div class="pcAreaLetraCor">C</div>`, LA(), LA(), LA(), LA(), LA(), LA(), `<div class="pcAreaLetraCor">Á</div>`, LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), `<div class="pcAreaLetraCor">G</div>`, LA(), LA()],
+            [LA(), `<div class="pcAreaLetraCor">O</div>`, LA(), LA(), LA(), `<div class="pcAreaLetraCor">T</div>`, `<div class="pcAreaLetraCor">O</div>`, `<div class="pcAreaLetraCor">U</div>`, `<div class="pcAreaLetraCor">R</div>`, `<div class="pcAreaLetraCor">O</div>`, LA(), LA(), LA(), LA(), LA(), LA(), LA(), `<div class="pcAreaLetraCor">I</div>`, LA(), LA()],
+            [LA(), `<div class="pcAreaLetraCor">R</div>`, LA(), LA(), LA(), LA(), LA(), LA(), `<div class="pcAreaLetraCor">I</div>`, LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), `<div class="pcAreaLetraCor">T</div>`, LA(), LA()],
+            [LA(), `<div class="pcAreaLetraCor">P</div>`, LA(), LA(), LA(), LA(), LA(), LA(), `<div class="pcAreaLetraCor">E</div>`, LA(), `<div class="pcAreaLetraCor">P</div>`, `<div class="pcAreaLetraCor">E</div>`, `<div class="pcAreaLetraCor">I</div>`, `<div class="pcAreaLetraCor">X</div>`, `<div class="pcAreaLetraCor">E</div>`, `<div class="pcAreaLetraCor">S</div>`, LA(), `<div class="pcAreaLetraCor">Á</div>`, LA(), LA()],
+            [LA(), `<div class="pcAreaLetraCor">I</div>`, LA(), LA(), LA(), LA(), LA(), LA(), `<div class="pcAreaLetraCor">S</div>`, LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), `<div class="pcAreaLetraCor">R</div>`, LA(), LA()],
+            [LA(), `<div class="pcAreaLetraCor">Ã</div>`, LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), `<div class="pcAreaLetraCor">I</div>`, LA(), LA()],
+            [LA(), `<div class="pcAreaLetraCor">O</div>`, `<div class="pcAreaLetraCor">L</div>`, `<div class="pcAreaLetraCor">I</div>`, `<div class="pcAreaLetraCor">B</div>`, `<div class="pcAreaLetraCor">R</div>`, `<div class="pcAreaLetraCor">A</div>`, LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), `<div class="pcAreaLetraCor">O</div>`, LA(), LA()],
+            [LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA()],
+            [LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), `<div class="pcAreaLetraCor">C</div>`, `<div class="pcAreaLetraCor">Â</div>`, `<div class="pcAreaLetraCor">N</div>`, `<div class="pcAreaLetraCor">C</div>`, `<div class="pcAreaLetraCor">E</div>`, `<div class="pcAreaLetraCor">R</div>`, LA(), LA()],
+            [LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA()],
+            [LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA()],
+            [LA(), LA(), LA(), `<div class="pcAreaLetraCor">V</div>`, `<div class="pcAreaLetraCor">I</div>`, `<div class="pcAreaLetraCor">R</div>`, `<div class="pcAreaLetraCor">G</div>`, `<div class="pcAreaLetraCor">E</div>`, `<div class="pcAreaLetraCor">M</div>`, LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA()],
+            [LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), `<div class="pcAreaLetraCor">A</div>`, `<div class="pcAreaLetraCor">Q</div>`, `<div class="pcAreaLetraCor">U</div>`, `<div class="pcAreaLetraCor">Á</div>`, `<div class="pcAreaLetraCor">R</div>`, `<div class="pcAreaLetraCor">I</div>`, `<div class="pcAreaLetraCor">O</div>`],
+            [LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA(), LA()]
+        ];
+
+        //Lendo a matriz
+
+
+
+        var meuHTML = "";
+
+        for (linha = 0; linha < 20; linha++) {
+            for (coluna = 0; coluna < 20; coluna++) {
+                meuHTML += matriz[linha][coluna];
+            }
+        }
+        pcArea.innerHTML += meuHTML;
+
+    </script>
+
+</body>
+
+</html>
